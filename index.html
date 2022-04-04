@@ -7,19 +7,22 @@
 </head>
 <body>
     <!--Верстать тут-->
-
     <div>
         <img class="logo" src="designs/logo1.png">
         <img class="logo" src="designs/logo2.png">
     </div>
 
     <div class="darkOverlay">
-        <div class="lightbox">
-            <div class="closeButton">X</div>
+        <div class="lightbox" data-lightbox>
+            <div class="closeButton" onclick="closeWindow()">X</div>
             <h2>Модальное окно</h2>
             <p>
                 Привет, я модальное окно и я удивлено, что я с тобой общаюсь.
             </p>
+            <div class="greyBar" data-text="Loading..." >
+                <div class="redBar"  data-text="Loading..."  >
+                </div>
+            </div>
         </div>
     </div>
 
